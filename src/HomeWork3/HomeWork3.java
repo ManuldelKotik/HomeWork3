@@ -8,7 +8,7 @@ public class HomeWork3 {
 
     public static void main(String[] args) {
 //Задание 1
-// guessNumber();
+// findNumber();
 //Задание 2
 // guessFruit();
      }
@@ -17,7 +17,7 @@ public class HomeWork3 {
 // При каждой попытке компьютер должен сообщить больше ли указанное пользователем число чем загаданное, или меньше.
 // После победы или проигрыша выводится запрос – «Повторить игру еще раз? 1 – да / 0 – нет»(1 – повторить, 0 – нет).
     
-    private static void guessNumber() {
+    private static void findNumber() {
 
         Scanner scanner = new Scanner(System.in);
         do {
