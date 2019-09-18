@@ -8,16 +8,16 @@ public class HomeWork3 {
 
     public static void main(String[] args) {
 //Задание 1
-// findNumber();
+// guessNumber();
 //Задание 2
-// findFruit();
+// guessFruit();
      }
 
 //1. Написать программу, которая загадывает случайное число от 0 до 9, и пользователю дается 3 попытки угадать это число.
 // При каждой попытке компьютер должен сообщить больше ли указанное пользователем число чем загаданное, или меньше.
 // После победы или проигрыша выводится запрос – «Повторить игру еще раз? 1 – да / 0 – нет»(1 – повторить, 0 – нет).
     
-    private static void findNumber() {
+    private static void guessNumber() {
 
         Scanner scanner = new Scanner(System.in);
         do {
@@ -53,7 +53,7 @@ public class HomeWork3 {
 //Играем до тех пор, пока игрок не отгадает слово
 //Используем только маленькие буквы
 
-    private static void findFruit() {
+    private static void guessFruit() {
 
         String[] words = {"apple", "orange", "lemon", "banana", "apricot", "avocado", "broccoli", "carrot", "cherry",
                 "garlic", "grape", "melon", "leak", "kiwi", "mango", "mushroom", "nut", "olive", "pea", "peanut",
