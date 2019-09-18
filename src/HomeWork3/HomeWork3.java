@@ -8,25 +8,26 @@ public class HomeWork3 {
 
     public static void main(String[] args) {
 //Задание 1
-// guessNumber();
+// findNumber();
 //Задание 2
-// guessFruit();
+// findFruit();
      }
 
 //1. Написать программу, которая загадывает случайное число от 0 до 9, и пользователю дается 3 попытки угадать это число.
 // При каждой попытке компьютер должен сообщить больше ли указанное пользователем число чем загаданное, или меньше.
 // После победы или проигрыша выводится запрос – «Повторить игру еще раз? 1 – да / 0 – нет»(1 – повторить, 0 – нет).
-    private static void guessNumber() {
+    
+    private static void findNumber() {
 
         Scanner scanner = new Scanner(System.in);
         do {
             int numComp = random.nextInt(10);
-            System.out.println("Угдай число с 3 попыток от 0 до 9");
+            System.out.println("Угадай число с 3 попыток от 0 до 9");
             for (int i = 3; i > 0; i--) {
                 System.out.println("Введи свой ответ: (для выхода из игры, просто нажмите Enter)");
-                int questionNum = scanner.nextInt(); //try не будем ставить, так как еще не узучали :)
+                int questionNum = scanner.nextInt();
                 if (questionNum == numComp) {
-                    System.out.println("Вы угадали число, молодец!");
+                    System.out.println("Вы угадали число!");
                     break;
                 }
                 System.out.println(questionNum > numComp ? "Введенное чилсо больше " : "Введенное число меньше ");
@@ -52,7 +53,7 @@ public class HomeWork3 {
 //Играем до тех пор, пока игрок не отгадает слово
 //Используем только маленькие буквы
 
-    private static void guessFruit() {
+    private static void findFruit() {
 
         String[] words = {"apple", "orange", "lemon", "banana", "apricot", "avocado", "broccoli", "carrot", "cherry",
                 "garlic", "grape", "melon", "leak", "kiwi", "mango", "mushroom", "nut", "olive", "pea", "peanut",
@@ -61,7 +62,7 @@ public class HomeWork3 {
         int indWord = random.nextInt(words.length - 1);
         String word = words[indWord];
         int lenWord = word.length();
-        System.out.println("Я загадал слово, попробуй отгадать его");
+        System.out.println("Отгадайте слово");
         System.out.println(word);
 
         Scanner scanner = new Scanner(System.in);
@@ -72,7 +73,7 @@ public class HomeWork3 {
 
             if (answer.equals("")) break;
             else if (word.equals(answer)) {
-                System.out.println("Вы угадали слово, игра закончена!!!");
+                System.out.println("Вы угадали слово, игра окончена!");
                 break;
             }
 
